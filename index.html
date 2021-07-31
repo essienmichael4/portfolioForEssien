@@ -16,23 +16,46 @@
     <title>My Portfolio</title>
 </head>
 <body>
-    <header>
+    <div class="nav">
+        <ul>
+            <li><a href="#home" class="active">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="myProject">my projects</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#" class="bottom">contact</a></li>
+        </ul>
+    </div>
+    <header id="home">
+        <div class="portfolio">my portfolio</div>
         <div class="headerText">
             <div class="decor"></div>
+            <p>Hi ...</p>
             <h2>i am <span>michael essien</span>.</h2>
             <p> a software developer in <span>ghana</span>. i am 
             a highly motivated and dedicated person ready to learn new tech and be abrest
-            with any new development in the industry so u can be assured of getting the best out
+            with any new development in the industry so you can be assured of getting the best out
             me.
             </p>
         </div>
         <div class="image">
             <div class="decor1"></div>
             <div class="decor2"></div>
-            <img src="./assets/a.jpg" alt="">
+            <div class="imgContainer">
+                <img src="./assets/a.jpg" alt="">
+            </div>
+
+            <div class="social">
+                <a href="#">in</a>
+                <a href="#">f</a>
+                <a href="#">g</a>
+                <a href="#">G</a>
+            </div>
+            
         </div>
         
     </header>
+
+    <div class="about" id="about"></div>
     
 </body>
 </html>
