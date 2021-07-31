@@ -1,0 +1,114 @@
+:root{
+    --themeColor: rgb(0, 0, 0);
+    --bgColor: rgba(0, 0, 0, .9);
+    --primaryColor: #ebebeb;
+    --secColor: blue;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primaryColor);
+}
+
+header{
+    background-color: var(--themeColor);
+    margin-top: -22px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+header .headerText{
+    position: relative;
+    width:30%;
+    height: 300px;
+    background-color: var(--bgColor);
+    padding: 10px 20px;
+}
+
+.headerText .decor{
+    position: absolute;
+    top: 60px;
+    left:50px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: var(--primaryColor);
+    height: 50px;
+    width: 80px;
+    opacity: .5;
+}
+
+header .headerText p{
+    color: var(--primaryColor);
+    font-size: small;
+    width:80%;
+}
+
+header .headerText p span{
+    color: var(--secColor);
+    font-size: medium;
+    text-transform: capitalize;
+}
+
+header h2{
+    color: var(--primaryColor);
+    font-size: medium;
+    text-transform: capitalize;
+}
+
+header h2 span{
+    color: var(--secColor);
+    font-family: 'Poppins', sans-serif;
+}
+
+header .image{
+    width: 650px;
+    height: 80%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    /* background-color: rosybrown; */
+    /* outline: 5px solid var(--primaryColor); */
+}
+
+.image .decor1{
+    position: absolute;
+    top: 0;
+    right:50px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: var(--primaryColor);
+    height: 50px;
+    width: 80px;
+    opacity: .5;
+}
+
+.image .decor2{
+    position: absolute;
+    top: 100px;
+    right:100px;
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+    height: 200px;
+    width: 200px;
+    opacity: .5;
+}
+
+header .image img{
+    width: 40%;
+    height: 100%;
+}
+
+
+
