@@ -15,10 +15,12 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: var(--primaryColor);
+    scroll-behavior: smooth;
+    
 }
 
 .active{
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid rgb(255, 255, 255);
 }
 
 .active1{
@@ -38,6 +40,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-image: linear-gradient(to right, red, pink,yellow, green, gold, blue );
+    opacity: .5; */
 }
 
 .nav ul{
@@ -102,7 +106,7 @@ header .headerText{
     opacity: .1;
 }
 
-header .portfolio{
+.portfolio{
     position: absolute;
     background-color: var(--primaryColor);
     top: 20px;
@@ -216,9 +220,12 @@ header .image .social a{
 .about{
     min-height: 100vh;
     width: 100%;
+    position: relative;
 }
 
 .projects{
     min-height: 100vh;
     width: 100%;
+    position: relative;
+    background-color: #000;
 }
