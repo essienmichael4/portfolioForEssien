@@ -16,7 +16,7 @@ body{
     height: 100vh;
     background-color: var(--primaryColor);
     scroll-behavior: smooth;
-    
+    overflow-x: hidden;
 }
 
 .active{
@@ -196,12 +196,10 @@ header .image .imgContainer img{
 header .image .social{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
     margin-left: 50px;
     width: 50px;
     height: 100%;
-    /* background-color: blue; */
 }
 
 header .image .social a{
@@ -212,7 +210,16 @@ header .image .social a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blue;
+    background-color: var(--primaryColor);
+    border-radius: 50%;
+}
+
+header .image .social a i{
+    color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
 }
 
 
@@ -221,6 +228,37 @@ header .image .social a{
     min-height: 100vh;
     width: 100%;
     position: relative;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.about .left{
+    display: flex;
+    margin-left: 20px;
+    width: 40%;
+    background-color: chocolate;
+}
+
+.about .left .line{
+    width: 5px;
+    height: 80vh;
+    background-color: black;
+    margin: auto 0;
+}
+
+.about .left .aboutTitle{
+    position: absolute;
+
+}
+
+.about .left .aboutTitle h2 span{
+    color: blue !important;
+    font-size: 35px;
+}
+
+.about .left .aboutText{
+margin-top: 100px;
+margin-left: 20px;
 }
 
 .projects{
