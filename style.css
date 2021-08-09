@@ -17,7 +17,9 @@ body{
     background-color: var(--primaryColor);
     scroll-behavior: smooth;
     overflow-x: hidden;
+    line-height: 1.5rem;
 }
+
 
 .active{
     border-bottom: 3px solid rgb(255, 255, 255);
@@ -212,6 +214,7 @@ header .image .social a{
     justify-content: center;
     background-color: var(--primaryColor);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 header .image .social a i{
@@ -220,9 +223,8 @@ header .image .social a i{
     align-items: center;
     justify-content: center;
     font-size: 24px;
+    cursor: pointer;
 }
-
-
 
 .about{
     min-height: 100vh;
@@ -247,7 +249,7 @@ header .image .social a i{
 
 .about .left .line{
     width: 5px;
-    height: 80vh;
+    height: 80%;
     background-color: black;
     margin: auto 0;
     /* display: flex;
@@ -255,11 +257,20 @@ header .image .social a i{
     overflow: visible;
 }
 
-.about .left .line .circle{
+.about .left .line .circle1{
     width: 8px;
     height: 8px;
     background-color: rgb(4, 21, 250);
     margin-top: 36px;
+    border-radius: 50%;
+    border: 2px solid black;
+    z-index: 5;
+}
+.about .left .line .circle2{
+    width: 8px;
+    height: 8px;
+    background-color: rgb(4, 21, 250);
+    margin-top: 120px;
     border-radius: 50%;
     border: 2px solid black;
     z-index: 5;
@@ -279,8 +290,16 @@ header .image .social a i{
     font-size: 35px;
 }
 
-.about .left .aboutContent .aboutText{
-    margin-top: 98px;
+.about .left .aboutContent .aboutText1{
+    margin-top: 97px;
+    margin-left: 20px;
+}
+.about .left .aboutContent .aboutText2{
+    margin-top: -8px;
+    margin-left: 20px;
+}
+.about .left .aboutContent .aboutText3{
+    margin-top: -10px;
     margin-left: 20px;
 }
 
@@ -296,13 +315,45 @@ header .image .social a i{
     opacity: .1;
 }
 
-.about .left .aboutContent .aboutText p{
+.about .left .aboutContent .aboutText1 p,.aboutText2 p{
     /* margin-top: -15px; */
     font-size: medium;
 }
+.about .left .aboutContent .aboutText1 p span,.aboutText2 p span{
+    /* margin-top: -15px; */
+    font-size: medium;
+    color: var(--secColor);
+}
 
+.aboutText2 p{
+    margin-top: -15px;
+}
 
+.about .left .aboutContent .aboutText3 .imgContainer1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.about .left .aboutContent .aboutText3 .imgContainer2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 
+.about .left .aboutContent .aboutText3 img{
+    background-color: var(--primaryColor);
+    color: var(--secColor);
+    width: 60px;
+    height: 80px;
+}
+
+.square{
+    width: 80px !important;
+}
+
+.space{
+    margin-bottom: 20px;
+}
 .projects{
     min-height: 100vh;
     width: 100%;
