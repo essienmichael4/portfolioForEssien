@@ -40,3 +40,27 @@ window.addEventListener('scroll', e => {
        
     }
 })
+
+
+let overlays = document.querySelectorAll('.overlay')
+let containers = document.querySelectorAll('.projectImg')
+
+containers.forEach(container =>{
+    container.addEventListener('mouseenter', event=>{
+        // console.log(container)
+        // container.children.find('overlay')
+        container.children[0].style.transition= "all ease .1s";
+        container.children[0].style.visibility = "visible";
+        
+    })
+})
+
+containers.forEach(container =>{
+    container.addEventListener('mouseleave', event=>{
+        // console.log(container)
+        // container.children.find('overlay')
+        container.children[0].style.transition= "all ease .1s";
+        container.children[0].style.visibility = "hidden";
+        
+    })
+})

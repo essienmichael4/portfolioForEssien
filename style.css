@@ -488,8 +488,31 @@ header .image .social a i{
     width: 60%;
     height: 100%;
     background-color: chartreuse;
+    z-index: 100;
+    position: relative;
     
 }
+
+.projects .projectBox .projectContainer .projectImg .img{
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+}
+
+.projects .projectBox .projectContainer .projectImg .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.projects .projectBox .projectContainer .projectImg .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    z-index: 110;
+    visibility: hidden;
+}
+
 
 .projects .projectBox .projectContainer .projectInfo{
     width: 35%;
