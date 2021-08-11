@@ -86,6 +86,27 @@ header{
     align-items: center;
     justify-content: space-around;
     position: relative;   
+    /* flex-wrap: wrap; */
+}
+
+.logo{
+    background: var(--secColor);
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.logo h2{
+    font-size: 32px;
+    font-weight: bold;
 }
 
 header .headerText{
@@ -133,7 +154,6 @@ header .headerText p{
 
 header .headerText p span{
     color: var(--secColor);
-    
     font-size: medium;
     text-transform: capitalize;
 }
@@ -231,7 +251,9 @@ header .image .social a i{
     width: 100%;
     position: relative;
     display: flex;
-    /* justify-content: space-around; */
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .about .portfolio{
@@ -241,10 +263,8 @@ header .image .social a i{
 
 .about .left{
     display: flex;
-    /* flex-direction: column; */
     margin-left: 20px;
     width: 30%;
-    /* background-color: chocolate; */
 }
 
 .about .left .line{
@@ -354,9 +374,125 @@ header .image .social a i{
 .space{
     margin-bottom: 20px;
 }
+
+.about .right{
+    position: relative;
+    width: 700px;
+    min-height: 100vh;
+}
+
+.about .right .line{
+    position: absolute;
+    width: 5px;
+    height: 20%;
+    top: 60%;
+    left: 10%;
+    background-color: black;
+    margin: auto 0;
+    overflow: visible;
+}
+
+.about .right .line .circle1{
+    width: 8px;
+    height: 8px;
+    background-color: rgb(4, 21, 250);
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    z-index: 5;
+}
+
+.about .right .decor2{
+    position: absolute;
+    top: 300px;
+    right:290px;
+    border-radius: 50%;
+    background-color: var(--secColor);
+    height: 200px;
+    width: 200px;
+    opacity: .1;
+    z-index: 0;
+}
+
+.about .right .image{
+    width: 90%;
+    height: 50%;
+    /* background-color: azure; */
+    margin-top: 70px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about .right .image .img{
+    width: 28%;
+}
+
+.about .right .image .img1{
+    margin-top: 50px;
+    width: 100%;
+    height: 70%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.about .right .image .image2{
+    margin-top: -50px;
+    width: 40%;
+    height: 60%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.about .right .image .img3{
+    margin-top: 50px;
+    width: 110%;
+    height: 70%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.about .right .aboutText{
+    margin-left: 14%;
+    margin-top: -17px;
+}
+
 .projects{
     min-height: 100vh;
     width: 100%;
     position: relative;
     background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects .projectBox{
+    margin-top: 100px;
+    width: 1200px;
+    min-height: 500px;
+}
+
+.projects .projectBox .projectContainer{
+    /* background: chartreuse; */
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.projects .projectBox .projectContainer .projectImg{
+    width: 60%;
+    height: 100%;
+    background-color: chartreuse;
+    
+}
+
+.projects .projectBox .projectContainer .projectInfo{
+    width: 35%;
+    height: 100%;
+    background-color: cornsilk;
 }
