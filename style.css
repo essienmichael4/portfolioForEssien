@@ -517,5 +517,38 @@ header .image .social a i{
 .projects .projectBox .projectContainer .projectInfo{
     width: 35%;
     height: 100%;
-    background-color: cornsilk;
+    background-color: #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects .projectBox .projectContainer .projectInfo .infoContainer{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects .projectBox .projectContainer .projectInfo .infoContainer span{
+    color: blue;
+}
+
+.projects .projectBox .projectContainer .projectInfo .infoContainer .route{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.projects .projectBox .projectContainer .projectInfo .infoContainer .route a{
+    text-decoration: none;
+    color: #ebebeb;
+    width: 45%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
 }
