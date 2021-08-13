@@ -69,6 +69,8 @@ body{
 .nav ul li a{
     color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: medium;
 }
 
 .bottom{
@@ -534,6 +536,7 @@ header .image .social a i{
 
 .projects .projectBox .projectContainer .projectInfo .infoContainer span{
     color: blue;
+    font-weight: bold;
 }
 
 .projects .projectBox .projectContainer .projectInfo .infoContainer .route{
@@ -551,4 +554,5 @@ header .image .social a i{
     align-items: center;
     justify-content: center;
     background-color: blue;
+    border-radius: 5px;
 }
